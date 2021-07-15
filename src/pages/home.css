@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px) {
+    .overlay1 {
+        padding: 25px 25px 25px 25vw;
+    }
+    img {
+        height: calc(100vh - 60px);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .overlay1 {
+        padding: 50px 50px 50px 25vw;
+    }
+    img {
+        height: calc(100vh - 80px);
+    }
+  }
+
+img {
+    object-fit: cover;
+}
+.imgMenu {
+    height: calc(100vh - 206px);
+}
+
+.overlay1 {
+    position:relative;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    margin: -85vh 0 10vw -15vw;
+    width:70vw;
+}
+
+.overlay1:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05) translateY(2%);
+    transition-duration: 0.2s;
+}
+
+.o1menu {
+    margin: -65vh 0 10vw -15vw;
+}
+
+#overlay2 {
+    position:relative;
+    z-index: 10;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+#h11{
+    font-size: max(4.5vw, 1em);
+    font-weight: 300;
+}
+#h12{
+    font-size: max(3.47vw, 1em);
+    font-weight: 300;
+}
+
+h2{
+    font-size: max(1.5vw, 0.8em);
+    margin: max(0vw, 1em) auto auto;
+}
+
+.slideCap{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: max(20%, 200px);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px 5px 100px;
+    transform: translateY(100px);
+    transition-duration: 0.2s;
+}
+
+.slideCap:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.2) translateY(90px);
+    transition-duration: 0.2s;
+}
